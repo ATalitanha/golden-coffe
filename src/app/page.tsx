@@ -1,9 +1,13 @@
-import { Moon, ShoppingCart } from "../../public/svg/svg";
+"use client"
 
 export default function Home() {
-  return (
-    <>
     
-    </>
-  );
+    
+    return(
+        <>
+            <div>
+            </div>
+            
+        </>
+    )
 }
