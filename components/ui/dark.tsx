@@ -8,4 +8,4 @@ const toggleTheme = () => {
         localStorage.setItem('theme', 'dark');
     }}
 
-export default toggleTheme
+export default toggleTheme;

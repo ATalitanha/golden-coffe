@@ -1,17 +1,18 @@
 "use client";
 import { headList, shopList } from "@/lib/db";
 import toggleTheme from "../ui/dark";
+import {ShoppingCart, Sun, Moon} from '@/public/svg/svg';
 
 const Header = () => {
-
+    
     return (
-        <header className="flex fixed mt-9 p-5 pl-10  max-w-[1728px] w-full rounded-3xl right-1/2 translate-1/2 mx-auto bg-black/50 backdrop-blur-md">
+        <header className="flex items-center justify-between fixed mt-9 p-5 pl-10  max-w-[1728px] w-full rounded-3xl right-1/2 translate-1/2 mx-auto bg-black/50 backdrop-blur-md">
             {/*  right of header*/}
             <article className="flex items-center justify-center gap-x-9 ">
                 {/* logo */}
                 <section>
-                    <div className="max-h-14">
-                        <img onClick={toggleTheme} src="/image/svgs/logo.svg" alt="" />
+                    <div className="size-14">
+                        <img onClick={toggleTheme} src="/image/svgs/logo.svg" alt="" className="w-full" />
                     </div>
                 </section>
                 {/* list */}
@@ -46,10 +47,26 @@ const Header = () => {
                 </section>
             </article>
             {/* left 0f header */}
-            <article>
-                
+            <article className="flex justify-center items-center gap-x-2.5">
+                {/* shop and dark cart */}
+                <section className="flex gap-5">
+                    <div className="text-orange-300 [&>*]:size-9">
+                        <ShoppingCart/>
+                    </div>
+                    <div onClick={toggleTheme} className="text-orange-300 h-full [&>*]:size-9 [&>*]:h-full">
+                        <Moon/>
+                    </div>
+                </section>
+                {/* line */}
+                <div className="h-14 w-0.5 bg-white/20"></div>
+                {/* login or user */}
+                <section>
+
+                </section>
             </article>
         </header>
     );
+
+    
 }
 export default Header;
