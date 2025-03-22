@@ -1,8 +1,8 @@
 const MobileHeader = () => {
     return (
-        <div className="">
+        <header>
             
-        </div>
+        </header>
     );
 };
 
