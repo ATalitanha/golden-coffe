@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Header from '@/components/layout/header'
 import "./globals.css";
 import { PhoneArrowUpRight, ShoppingCart } from "../../public/svg/svg";
 import HambrgerMenue from "../../components/ui/HambrgerMenue";
@@ -14,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fa" dir="rtl">
       <body
         className={`overflow-x-hidden w-screen h-screen font-Dana-medium bg-gray-100 dark:bg-zinc-700`}
       >
