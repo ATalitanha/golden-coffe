@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @font-face {
     font-family: Dana-Medium;
@@ -40,4 +41,4 @@
     --shadow-default: 0px 1px 10px 0px #0000000D;
 
 
-};
+}
