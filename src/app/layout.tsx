@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
-
+import { PhoneArrowUpRight, ShoppingCart } from "../../public/svg/svg";
+import HambrgerMenue from "../../components/ui/HambrgerMenue";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,8 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`bg-linear-to-tr from-white  to-black/50 w-screen h-screen font-Dana-medium`}
+        className={`/50 w-screen h-screen font-Dana-medium`}
       >
+            
         {children}
       </body>
     </html>
