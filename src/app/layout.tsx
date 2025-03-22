@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Header from '@/components/layout/header'
 import "./globals.css";
 
 
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body
         className={`bg-linear-to-tr from-white  to-black/50 w-screen h-screen font-Dana-medium`}
       >
+        <Header/>
         {children}
       </body>
     </html>
