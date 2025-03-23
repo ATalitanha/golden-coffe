@@ -4,6 +4,10 @@ const MobileHeader = () => {
     return(
         <header>
             
-        </header>
-    )
-}
+        </header>a
+    );
+};
+
+
+export default MobileHeader;
+
