@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { headList, shopList } from "@/lib/db";
+import { headList, } from "@/lib/db";
 import toggleTheme from "../ui/dark";
 import {ShoppingCart, Moon} from '@/public/svg/svg';
 import DShopMenu from "../ui/dShopMenu";
