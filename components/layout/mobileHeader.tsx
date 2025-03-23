@@ -5,5 +5,7 @@ const MobileHeader = () => {
         <header>
             
         </header>
-    )
-}
+    );
+};
+
+export default MobileHeader;
