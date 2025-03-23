@@ -4,7 +4,7 @@ const MobileHeader = () => {
     return(
         <header>
             
-        </header>a
+        </header>
     );
 };
 
