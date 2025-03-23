@@ -1,7 +1,7 @@
 "use client";
 import { headList, shopList } from "@/lib/db";
 import toggleTheme from "../ui/dark";
-import {ShoppingCart, Sun, Moon} from '@/public/svg/svg';
+import {ShoppingCart, Moon} from '@/public/svg/svg';
 
 const Header = () => {
     
