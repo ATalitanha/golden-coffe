@@ -1,9 +1,9 @@
-const MobileHeader = () => {
-    return (
-        <div className="">
-            
-        </div>
-    );
-};
+'use client'
 
-export default MobileHeader;
+const MobileHeader = () => {
+    return(
+        <header>
+            
+        </header>
+    )
+}
