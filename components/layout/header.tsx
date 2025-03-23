@@ -12,7 +12,6 @@ const Header = () => {
                 {/* logo */}
                 <section>
                     <div className="size-14">
-                        <img onClick={toggleTheme} src="/image/svgs/logo.svg" alt="" className="w-full" />
                     </div>
                 </section>
                 {/* list */}
