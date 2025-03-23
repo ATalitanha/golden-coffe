@@ -14,7 +14,7 @@ const Header = () => {
                 {/* logo */}
                 <section>
                     <div>
-                        <img src="/image/svgs/logo.svg" alt="" className="size-14" />
+                        <Image src={"/image/svgs/logo.svg"} alt="" width={56} height={56}/>
                     </div>
                 </section>
                 {/* list */}
