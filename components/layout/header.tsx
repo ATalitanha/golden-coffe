@@ -1,7 +1,9 @@
 "use client";
+import Image from "next/image";
 import { headList, shopList } from "@/lib/db";
 import toggleTheme from "../ui/dark";
 import {ShoppingCart, Moon} from '@/public/svg/svg';
+import DShopMenu from "../ui/dShopMenu";
 
 const Header = () => {
     
@@ -11,7 +13,8 @@ const Header = () => {
             <article className="flex items-center justify-center gap-x-9 ">
                 {/* logo */}
                 <section>
-                    <div className="size-14">
+                    <div>
+                        <img src="/image/svgs/logo.svg" alt="" className="size-14" />
                     </div>
                 </section>
                 {/* list */}
@@ -29,15 +32,7 @@ const Header = () => {
                                 return (
                                     <li className="transition-all hover:text-orange-200 hover:[&>div]:flex hover:[&>div]:opacity-100" key={l.id}>
                                         <a href="#" key={l.slug}>{l.name}</a>
-                                        <div className=" fixed hidden opacity-0 flex-col py-5 px-6  gap-4 rounded-2xl border-t-[3px] border-orange-200 dark:border-orange-300 transition-all shadow-default  bg-white dark:bg-zinc-700">
-                                            {shopList.map(s => {
-                                                return (
-                                                    <div key={s.id} className="transition-all text-zinc-700 dark:text-white hover:text-orange-300">
-                                                        <a href="#">{s.name}</a>
-                                                    </div>
-                                                )
-                                            })}
-                                        </div>
+                                        <DShopMenu/>
                                     </li>
                                 )
                             }
@@ -52,8 +47,10 @@ const Header = () => {
                     <div className="text-orange-300 [&>*]:size-9">
                         <ShoppingCart/>
                     </div>
-                    <div onClick={toggleTheme} className="text-orange-300 h-full [&>*]:size-9 [&>*]:h-full">
-                        <Moon/>
+                    <div onClick={toggleTheme} className="text-orange-300 h-full ">
+                        <a href="#" className="[&>*]:size-9 [&>*]:h-full">
+                            <Moon/>
+                        </a>
                     </div>
                 </section>
                 {/* line */}
