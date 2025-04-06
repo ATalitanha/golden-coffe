@@ -1,6 +1,7 @@
 "use client";
 import RHead from "../ui/dHeader/rHead";
-import LHead from '@/components/ui/dHeader/lHead'
+import LHead from '@/components/ui/dHeader/lHead';
+
 
 const Header = () => {
     
