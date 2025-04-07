@@ -26,6 +26,7 @@ export const products: product[] = [
         mogodi: true,
         price: 175000,
         star: 4,
+        takfif: 0,
     },
     {
         id: '2',
@@ -34,6 +35,7 @@ export const products: product[] = [
         mogodi: false,
         price: 175000,
         star: 3,
+        takfif: 0,
     },
     {
         id:'3',
@@ -51,6 +53,7 @@ export const products: product[] = [
         mogodi: true,
         price: 175000,
         star: 4,
+        takfif: 0,
     },
     {
         id:'5',
@@ -68,6 +71,7 @@ export const products: product[] = [
         mogodi:false,
         price:175000,
         star:2,
+        takfif: 0,
     },
     {
         id:'7',
@@ -76,6 +80,7 @@ export const products: product[] = [
         mogodi:true,
         price:175000,
         star:5,
+        takfif: 0,
     },
     {
         id:'8',
@@ -84,6 +89,7 @@ export const products: product[] = [
         mogodi:true,
         price:175000,
         star:4,
+        takfif: 0,
     },
 ];
 
