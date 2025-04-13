@@ -1,4 +1,6 @@
-"use client"
+"use client";
+
+import { ChangeLog } from "@/components/change-log";
 
 export default function Home() {
     
@@ -7,7 +9,9 @@ export default function Home() {
         <>
             <div>
             </div>
-            
+
+
+            <ChangeLog/>
         </>
-    )
-}
+    );
+};
