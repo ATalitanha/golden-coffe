@@ -57,4 +57,9 @@ export interface post {
     cap: string;  // in nain page details
     auth: string;
     date: date;
-}
+};
+
+export interface ChangeLog  {
+    version: string;
+    changes: string[];
+};
