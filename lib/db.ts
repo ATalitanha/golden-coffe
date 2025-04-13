@@ -39,7 +39,6 @@ export const products: product[] = [
         mogodi: false,
         price: 175000,
         star: 3,
-        takfif: 0,
     },
     {
         id: '3',
