@@ -1,4 +1,6 @@
+
 import { headMenu, shopMenu, product, bigProduct, showCart, category, post, ChangeLog } from "./types";
+
 
 export const headList: headMenu[] = [
     { id: '1', name: 'صفحه اصلی', slug: 'صفحه-اصلی' },
@@ -16,6 +18,7 @@ export const shopList: shopMenu[] = [
     { id: '4', name: 'ترکیبات تجاری', slug: 'ترکیبات-تجاری' },
     { id: '5', name: 'کپسول قهوه', slug: 'کپسول-قهوه' },
     { id: '6', name: 'قهوه زینو برزیلی', slug: 'قهوه-زینو-برزیلی' },
+
 ];
 
 export const products: product[] = [
@@ -26,7 +29,9 @@ export const products: product[] = [
         mogodi: true,
         price: 175000,
         star: 4,
+
         takfif: 0,
+
     },
     {
         id: '2',
@@ -34,7 +39,7 @@ export const products: product[] = [
         name: 'قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی',
         mogodi: false,
         price: 175000,
-        star: 3,
+        star: 3
         takfif: 0,
     },
     {
@@ -44,6 +49,7 @@ export const products: product[] = [
         mogodi: true,
         price: 175000,
         star: 5,
+
         takfif: 12,
     },
     {
@@ -90,6 +96,7 @@ export const products: product[] = [
         price: 175000,
         star: 4,
         takfif: 0,
+
     },
 ];
 
@@ -111,12 +118,14 @@ export const bigProducts: bigProduct[] = [
         star: 3,
     },
     {
+
         id: '3',
         imge: './image/products/p7.png',
         name: 'قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی',
         mogodi: true,
         price: 175000,
         star: 5,
+
         takfif: 12,
     },
     {
@@ -197,3 +206,4 @@ export function getChangeLogs(): ChangeLog[] {
         },
     ];
 };
+
