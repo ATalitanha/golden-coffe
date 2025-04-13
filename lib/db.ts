@@ -29,7 +29,6 @@ export const products: product[] = [
         mogodi: true,
         price: 175000,
         star: 4,
-
         takfif: 0,
 
     },
@@ -39,7 +38,7 @@ export const products: product[] = [
         name: 'قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی',
         mogodi: false,
         price: 175000,
-        star: 3
+        star: 3,
         takfif: 0,
     },
     {
@@ -49,7 +48,6 @@ export const products: product[] = [
         mogodi: true,
         price: 175000,
         star: 5,
-
         takfif: 12,
     },
     {
