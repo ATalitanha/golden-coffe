@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { X } from "lucide-react";
-import { getChangeLogs } from "@/lib/db";
+import { logs } from "@/lib/db";
 import { AnimatePresence, motion } from "framer-motion";
 import toggleTheme from "./ui/dark";
 
@@ -16,7 +16,6 @@ export function ChangeLog() {
     setIsOpen(true)
 
     // Fetch the changelog data
-    const logs = getChangeLogs()
     setChangeLogs(logs)
   }, []);
 
@@ -35,6 +34,7 @@ export function ChangeLog() {
       },
     }),
   };
+  
 
   return (
     <AnimatePresence>
@@ -88,7 +88,7 @@ export function ChangeLog() {
                     className="py-4 text-xl flex justify-between items-center cursor-pointer"
                     onClick={() => handleAccordionChange(`item-${index}`)}
                   >
-                    <span className="font-medium">Version {log.version}</span>
+                    <span className="font-medium">نسخه {log.version}</span>
                     <motion.div
                       animate={{ rotate: expandedItem === `item-${index}` ? 180 : 0 }}
                       transition={{ duration: 0.3 }}
@@ -117,6 +117,7 @@ export function ChangeLog() {
                         <div className="pb-4 px-1">
                           <ul className="list-disc pl-5 space-y-1">
                             {log.changes.map((change, changeIndex) => (
+                              
                               <motion.li
                                 key={changeIndex}
                                 className=" text-gray-700 dark:text-gray-300"
